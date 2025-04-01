@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# Vendors pyprima from https://github.com/nbelakovski/prima
+# Vendors pyprima from https://github.com/libprima/prima
 
 set -o nounset
 set -o errexit
 
-REPO_URL="https://github.com/nbelakovski/prima"
-COMMIT_HASH="bb031b16d44bea925dd84ca241b13279d8b121f7"
+REPO_URL="https://github.com/libprima/prima"
+COMMIT_HASH="5a128beb5f29155adfc4dd302a6dcb3f9e885aea"
 
 ROOT_DIR="prima"
 
@@ -23,5 +23,3 @@ rm -rf fortran/
 rm -rf matlab/
 rm -rf c/
 rm -rf python/
-
-echo "Update this directory using vendor_pyprima.sh" >$ROOT_DIR/README.md
