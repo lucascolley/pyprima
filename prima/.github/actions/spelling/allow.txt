@@ -2261,11 +2261,6 @@ TESTQUAD
 WAITALL
 xcodebuild
 ICX
-bglobal
-cglobal
-lglobal
-nglobal
-uglobal
 Belakovski
 allclose
 argmin
@@ -2288,7 +2283,6 @@ jth
 Kbreak
 mgh
 mmm
-multd
 nanargmax
 tenbars
 tfi

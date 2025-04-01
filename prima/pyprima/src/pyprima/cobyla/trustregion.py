@@ -386,7 +386,7 @@ def trstlp_sub(iact: npt.NDArray, nact: int, stage, A, b, delta, d, vmultc, z):
         # 2. vmultd[:nact] and vmultd[nact:mcon] are calculated separately with no coupling.
         # 3. vmultd will be calculated from scratch again in the next iteration.
         # Set vmultd to the vmultc vector that would occur if d became dnew. A device is included to
-        # force multd[k] = 0 if deviations from this value can be attributed to computer rounding
+        # force vmultd[k] = 0 if deviations from this value can be attributed to computer rounding
         # errors. First calculate the new Lagrange multipliers.
         vmultd[:nact] = -lsqr(A[:, iact[:nact]], dnew, z[:, :nact], zdota[:nact])
         if stage == 2:
